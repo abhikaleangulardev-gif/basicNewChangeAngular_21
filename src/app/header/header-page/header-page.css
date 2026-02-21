@@ -1,0 +1,21 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.nav-list mat-list-item {
+  width: auto !important;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 18px;
+  color:black;
+}

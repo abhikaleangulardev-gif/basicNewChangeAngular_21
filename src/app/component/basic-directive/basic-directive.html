@@ -1,0 +1,62 @@
+<div class="row my-4">
+    <!-- NgClass -->
+
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>NgClass</h4>
+            </div>
+            <div class="card-body d-flex justify-content-between">
+                <h5 [ngClass]="{'active-ngclass':isActiveNgClass()}">First Cards</h5>
+                <button mat-flat-button (click)="onChangeNgClassStyle()">Apply Style</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- class -->
+
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>Class</h4>
+            </div>
+            <div class="card-body d-flex justify-content-between">
+                <h5 [class.active-class]="isActiveClass()">Second Cards</h5>
+                <button mat-flat-button (click)="onChangeClassStyle()">Apply Style</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NgStyle -->
+
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>NgStyle</h4>
+            </div>
+            <div class="card-body d-flex justify-content-between">
+                <h5 [ngStyle]="myApplyStyle()">Third Cards</h5>
+                <button mat-flat-button (click)="onChangeNgStyle()">Apply Style</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- style -->
+
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>Style</h4>
+            </div>
+            <div class="card-body d-flex justify-content-between">
+                <!-- <h5 [style]="{'background-color':'green','padding':'20px'}">Four Cards</h5> -->
+
+                <!-- <h5 [style.background-color]="'green'" [style.padding]="'15px'">Four Cards</h5> -->
+
+                <h5 [style]="MyFourCardsStyle()">Four Cards</h5>
+                <button mat-flat-button (click)="myFourCardsChangeStyle()">Apply Style</button>
+            </div>
+        </div>
+    </div>
+
+</div>

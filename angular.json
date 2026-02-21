@@ -4,9 +4,15 @@
   "cli": {
     "packageManager": "npm"
   },
-  "newProjectRoot": "projects",
+"newProjectRoot": "projects",
   "projects": {
     "basicNewChangeAngular_21": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "es-PR": "src/locale/messages.es.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -41,6 +47,9 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "localize": [
+              "es-PR"
+            ],
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -58,6 +67,9 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            "polyfills": [
+              "@angular/localize/init"
             ]
           },
           "configurations": {

@@ -1,0 +1,17 @@
+.active-ngclass{
+    width:200px;
+    background-color: brown;
+    color:beige;
+    padding:8px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.active-class{
+    width:200px;
+    background-color:orangered;
+    color:beige;
+    padding:8px;
+    border-radius: 10px;
+    text-align: center;
+}
